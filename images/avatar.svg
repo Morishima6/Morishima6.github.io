@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Zhenxi Gao monogram</title>
+  <desc id="desc">A teal and navy monogram avatar with the letters ZG.</desc>
+  <rect width="720" height="720" fill="#0f172a"/>
+  <circle cx="360" cy="300" r="220" fill="#0f766e" opacity="0.85"/>
+  <circle cx="360" cy="300" r="190" fill="none" stroke="#99f6e4" stroke-width="4" opacity="0.7"/>
+  <text x="360" y="350" text-anchor="middle" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="170" font-weight="700" letter-spacing="10">ZG</text>
+  <text x="360" y="555" text-anchor="middle" fill="#ccfbf1" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="8">MORISHIMA6</text>
+</svg>

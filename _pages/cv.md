@@ -7,58 +7,36 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+## Education
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+- **Nanjing University** - M.Eng. in Software Engineering, LipLab, 2025 - Present
+- **Nanjing University of Aeronautics and Astronautics** - B.Eng. in Computer Science and Technology, 2021 - 2025
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Experience
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+- **SenseTime**, Multimodal LLM Department - Algorithm Intern, 2026 - Present
+  - Query synthesis, PII masking, coverage-controlled generation, and benchmark evaluation for a Static HTML PPT Agent.
+- **GoLaxy**, R&D Center - Algorithm Intern, 2025
+  - Financial news processing, entity-relation extraction, and multimodal speech processing.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Research Projects
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- **WANDER** - Human-trajectory retrieval-augmented planning for computer-use agents.
+- **SE-Explorer Agent** - Lightweight ReAct agent for software engineering tasks.
+- **GenJudge** - Explainable multi-model multimodal AIGC detection framework.
+
+## Skills
+
+Python, C/C++, Java, Linux, Docker, Git, PyTorch, FAISS, RAG, multimodal learning, and GUI automation.
+
+## Publication
+
+{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}
+
+## Honors
+
+- Honorable Mention, 2024 Mathematical Contest in Modeling
+- Third Prize, 14th Lanqiao Cup National Software and Information Technology Professional Talent Competition, Jiangsu Division, 2023
+- Second Prize, 14th Chinese Mathematics Competition for College Students, 2023
