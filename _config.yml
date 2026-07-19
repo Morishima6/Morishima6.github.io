@@ -23,7 +23,7 @@ repository               : "Morishima6/Morishima6.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "avatar.svg"
+  avatar           : "avatar.jpg"
   name             : "Zhenxi Gao"
   pronouns         : # example: "she/her"  
   bio              : "Computer-Use Agents | Agentic RAG | Multimodal AI"

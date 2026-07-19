@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-# Zhenxi Gao
-
 I am a Software Engineering master's student at **Nanjing University**, working with the **Language Intelligence Processing Laboratory (LipLab)**. My research focuses on reliable AI agents that can perceive interfaces, retrieve experience, plan long-horizon tasks, and take grounded actions.
 
 <div class="notice--primary">
