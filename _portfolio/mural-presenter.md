@@ -5,6 +5,10 @@ collection: portfolio
 permalink: /portfolio/mural-presenter/
 date: 2026-06-01
 ongoing: true
+project_status: "Planned · ICLR 2027"
+area: "Multi-Agent Systems"
+repo_url: "https://github.com/G1nkgo7/MURAL-Presenter"
+repo_private: true
 ---
 
 MURAL-Presenter is a skill-driven multi-agent framework for full-lifecycle presentation authoring. It addresses cross-stage dependencies, cross-slide consistency, and iterative revision through shared deck-level state and impact-aware coordination.

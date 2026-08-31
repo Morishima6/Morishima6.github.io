@@ -4,6 +4,9 @@ excerpt: "Explainable Multi-Model Multimodal AIGC Detection"
 collection: portfolio
 permalink: /portfolio/genjudge/
 date: 2025-09-01
+project_status: "Completed"
+area: "Multimodal AI"
+repo_url: "https://github.com/Morishima6/GenJudge"
 ---
 
 GenJudge is an explainable multimodal AIGC detection framework that combines image forensics, text analysis, and cross-modal logic to produce evidence-backed decisions.

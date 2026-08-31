@@ -4,6 +4,9 @@ excerpt: "Human-Trajectory Retrieval-Augmented Planning for Computer-Use Agents"
 collection: portfolio
 permalink: /portfolio/wander/
 date: 2026-07-01
+project_status: "Submitted · AAAI 2027"
+area: "Computer Use"
+repo_url: "https://github.com/Morishima6/Computer-Use-Agent"
 ---
 
 WANDER is a human-trajectory retrieval-augmented framework for computer-use agents. It converts historical desktop operation trajectories into reusable canonical units and uses them to reduce planning drift during long-horizon GUI tasks.

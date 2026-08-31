@@ -7,7 +7,13 @@ redirect_from:
   - /resume
 ---
 
-<p><a href="/files/CV_Zhenxi_Gao.pdf" class="btn btn--primary">Download CV (PDF)</a></p>
+<div class="cv-page" markdown="1">
+
+<div class="cv-download">
+  <p class="home-eyebrow">Curriculum Vitae</p>
+  <p>Education, research experience, selected projects, skills, and honors.</p>
+  <a href="/files/CV_Zhenxi_Gao.pdf" class="portfolio-button portfolio-button--primary">Download CV (PDF)</a>
+</div>
 
 ## Education
 
@@ -36,12 +42,19 @@ redirect_from:
 
 ## Publication
 
+<div class="cv-publications">
 {% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
+  <article class="cv-publication-item">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.citation }}</p>
+  </article>
 {% endfor %}
+</div>
 
 ## Honors
 
 - Honorable Mention, 2024 Mathematical Contest in Modeling
 - Third Prize, C/C++ Programming University Group A, 14th Lanqiao Cup National Software and Information Technology Professional Talent Competition, Jiangsu Division, 2023
 - Second Prize, 14th Chinese Mathematics Competition for College Students, Non-Mathematics Category, 2023
+
+</div>

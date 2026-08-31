@@ -7,16 +7,23 @@ author_profile: true
 
 {% include base_path %}
 
+<div class="research-archive">
+  <header class="archive-intro">
+    <p class="home-eyebrow">Research Portfolio</p>
+    <p>Selected work on long-horizon agent systems, computer use, agentic retrieval, and multimodal reasoning.</p>
+  </header>
 
-{% assign portfolio = site.portfolio | sort: "date" | reverse %}
-{% for post in portfolio %}
-  {% if post.ongoing %}
-    {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
-{% for post in portfolio %}
-  {% unless post.ongoing %}
-    {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
-
+  <div class="research-list-grid">
+    {% assign portfolio = site.portfolio | sort: "date" | reverse %}
+    {% for post in portfolio %}
+      {% if post.ongoing %}
+        {% include research-card.html %}
+      {% endif %}
+    {% endfor %}
+    {% for post in portfolio %}
+      {% unless post.ongoing %}
+        {% include research-card.html %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>

@@ -4,6 +4,9 @@ excerpt: "A Lightweight ReAct Agent for Software Engineering Tasks"
 collection: portfolio
 permalink: /portfolio/se-explorer-agent/
 date: 2026-02-01
+project_status: "Completed"
+area: "Agentic RAG"
+repo_url: "https://github.com/Morishima6/SE-Explorer-Agent"
 ---
 
 SE-Explorer Agent reconstructs a fixed RAG workflow into a lightweight ReAct loop that can retrieve documents, localize code, collect evidence, propose solutions, and verify results based on task state.

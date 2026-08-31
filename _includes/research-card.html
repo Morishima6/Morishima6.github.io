@@ -1,0 +1,14 @@
+{% include base_path %}
+
+<article class="research-list-card" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="research-card__meta">
+    {% if post.project_status %}<span class="status-badge">{{ post.project_status }}</span>{% endif %}
+    {% if post.area %}<span class="status-badge status-badge--neutral">{{ post.area }}</span>{% endif %}
+  </div>
+  <h2 itemprop="headline"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h2>
+  <p class="research-list-card__subtitle" itemprop="description">{{ post.excerpt }}</p>
+  <div class="research-list-card__actions">
+    <a class="portfolio-button portfolio-button--primary" href="{{ base_path }}{{ post.url }}">Project Details</a>
+    {% if post.repo_url %}<a class="portfolio-button" href="{{ post.repo_url }}">GitHub{% if post.repo_private %} · Private{% endif %}</a>{% endif %}
+  </div>
+</article>
