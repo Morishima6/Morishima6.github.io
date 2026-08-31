@@ -19,10 +19,21 @@ I am currently an Algorithm Intern in the **Multimodal LLM Department at SenseTi
 
 ## Selected Research
 
-- **MURAL-Presenter** - Revision-aware multi-agent authoring for long-horizon presentations. [Project page](/portfolio/mural-presenter/)
-- **WANDER** - Human-trajectory retrieval-augmented planning for computer-use agents; submitted to AAAI 2027. [Project page](/portfolio/wander/)
-- **SE-Explorer Agent** - A lightweight ReAct agent for software engineering tasks. [Project page](/portfolio/se-explorer-agent/)
-- **GenJudge** - An explainable multi-model multimodal AIGC detection framework. [Project page](/portfolio/genjudge/)
+### [MURAL-Presenter: Multi-agent Unified Revision-Aware Authoring for Long-horizon Presentations](/portfolio/mural-presenter/)
+
+A skill-driven multi-agent framework for full-lifecycle presentation authoring that addresses cross-stage dependencies, cross-slide consistency, and iterative revision through shared deck-level state and impact-aware coordination.
+
+### [WANDER: Bridging Human Workflow and Automated Computer Use via Naturalistic Demonstrations and Enhanced Retrieval](/portfolio/wander/)
+
+A human-trajectory retrieval-augmented computer-use agent that converts historical human operation trajectories into reusable structured knowledge to mitigate planning drift and unstable operation granularity in long-horizon desktop tasks. **AAAI 2027 conference submission.**
+
+### [SE-Explorer Agent: A Lightweight ReAct Agent for Software Engineering Tasks](/portfolio/se-explorer-agent/)
+
+A lightweight ReAct-style agent loop that dynamically performs knowledge retrieval, code localization, evidence collection, solution generation, and verification based on task state.
+
+### [GenJudge: An Explainable Multi-Model Multimodal AIGC Detection Framework](/portfolio/genjudge/)
+
+A multi-model framework that simulates expert review mechanisms for detecting AI-generated content in image-text pairs, addressing the poor cross-domain generalization of existing single-model approaches.
 
 ## Education
 
