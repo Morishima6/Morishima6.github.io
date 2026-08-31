@@ -15,7 +15,7 @@ I am a Software Engineering master's student at **Nanjing University**, working 
 
 ## Current Position
 
-I am currently an **Algorithm Intern** in the **Multimodal LLM Department at SenseTime**.
+I am currently an **Algorithm Intern** in the **Multimodal LLM Department at SenseTime Research Institute**.
 
 ## Selected Research
 
