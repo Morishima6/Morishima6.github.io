@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Zhenxi Gao"
 title_separator          : "-"
 name                     : &name "Zhenxi Gao"
-description              : &description "Zhenxi Gao's research portfolio in computer-use agents, agentic RAG, and multimodal AI"
+description              : &description "Zhenxi Gao's research portfolio in long-horizon agents, computer use, and multimodal AI"
 url                      : https://morishima6.github.io
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "avatar.jpg"
   name             : "Zhenxi Gao"
   pronouns         : # example: "she/her"  
-  bio              : "Computer-Use Agents | Agentic RAG | Multimodal AI"
+  bio              : "Long-Horizon Agents | Computer Use | Multimodal AI"
   location         : "Nanjing, China"
   employer         : "Nanjing University"
   uri              : "https://morishima6.github.io"
@@ -87,7 +87,7 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Preprints & Submissions'
   conferences:
     title: 'Conference Papers'
 
