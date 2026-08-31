@@ -14,3 +14,5 @@ MURAL-Presenter is a skill-driven multi-agent framework for full-lifecycle prese
 - Led THREAD-Bench, which evaluates dependency preservation across multi-step, multi-tool, and multi-agent workflows at the Knowledge, Deck, and Page levels.
 - Trained MURAL-Lite on high-quality decision-level revisions from teacher-model trajectories using process supervision.
 - Conducted model evaluations and component ablations covering long-range consistency, error recovery, and multi-round revision.
+
+<p><a href="https://github.com/G1nkgo7/MURAL-Presenter" class="btn btn--primary">View repository on GitHub (private)</a></p>

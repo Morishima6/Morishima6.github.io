@@ -23,6 +23,8 @@ I am currently an Algorithm Intern in the **Multimodal LLM Department at SenseTi
 
 A skill-driven multi-agent framework for full-lifecycle presentation authoring that addresses cross-stage dependencies, cross-slide consistency, and iterative revision through shared deck-level state and impact-aware coordination.
 
+[GitHub repository (private)](https://github.com/G1nkgo7/MURAL-Presenter)
+
 ### [WANDER: Bridging Human Workflow and Automated Computer Use via Naturalistic Demonstrations and Enhanced Retrieval](/portfolio/wander/)
 
 A human-trajectory retrieval-augmented computer-use agent that converts historical human operation trajectories into reusable structured knowledge to mitigate planning drift and unstable operation granularity in long-horizon desktop tasks. **AAAI 2027 conference submission.**
