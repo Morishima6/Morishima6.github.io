@@ -9,6 +9,9 @@
   --portfolio-heading: #25262b;
   --portfolio-on-accent: #ffffff;
   --portfolio-shadow: none;
+  --portfolio-glow: rgba(94, 106, 210, 0.12);
+  --portfolio-hover: rgba(94, 106, 210, 0.045);
+  --portfolio-header: rgba(255, 255, 255, 0.86);
   --portfolio-display-font: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
   --global-base-color: #5e6ad2;
   --global-bg-color: #f7f8fa;
@@ -34,6 +37,9 @@ html[data-theme="dark"] {
   --portfolio-heading: #f7f8f8;
   --portfolio-on-accent: #ffffff;
   --portfolio-shadow: none;
+  --portfolio-glow: rgba(113, 112, 255, 0.16);
+  --portfolio-hover: rgba(113, 112, 255, 0.07);
+  --portfolio-header: rgba(15, 16, 17, 0.88);
   --global-base-color: #7170ff;
   --global-bg-color: #08090a;
   --global-footer-bg-color: #0f1011;
@@ -64,6 +70,9 @@ html[data-theme="dark"] {
 }
 
 .home-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   margin: 0 0 0.55rem;
   color: var(--portfolio-accent);
   font-family: Monaco, Consolas, "Lucida Console", monospace;
@@ -71,6 +80,15 @@ html[data-theme="dark"] {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.home-eyebrow::before {
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: var(--portfolio-accent);
+  box-shadow: 0 0 0 4px var(--portfolio-accent-soft);
+  content: "";
 }
 
 .home-hero h1 {
@@ -156,11 +174,13 @@ html[data-theme="dark"] {
 .home-page .portfolio-button--primary {
   border-color: var(--portfolio-accent);
   background: var(--portfolio-accent);
+  box-shadow: 0 8px 20px rgba(94, 106, 210, 0.18);
   color: var(--portfolio-on-accent);
 }
 
 .portfolio-button--primary:hover {
   background: var(--portfolio-accent-strong);
+  box-shadow: 0 10px 24px rgba(94, 106, 210, 0.24);
   color: var(--portfolio-on-accent);
 }
 
@@ -245,11 +265,12 @@ html[data-theme="dark"] {
   border-top: 1px solid var(--portfolio-border);
   background: transparent;
   counter-increment: research-item;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .research-card:hover {
   border-color: var(--portfolio-accent);
+  background: linear-gradient(180deg, var(--portfolio-hover), transparent 75%);
 }
 
 .research-grid {
@@ -305,6 +326,11 @@ html[data-theme="dark"] {
 
 .research-card h3 a {
   color: inherit;
+  transition: color 0.18s ease;
+}
+
+.research-card h3 a:hover {
+  color: var(--portfolio-accent-strong);
 }
 
 .research-card__subtitle {
@@ -398,14 +424,18 @@ html[data-theme="dark"] {
 
 @media (prefers-reduced-motion: reduce) {
   .portfolio-button,
-  .research-card {
+  .research-card,
+  .research-card h3 a {
     transition: none;
   }
 }
 
 /* Global academic portfolio refinement */
 body {
-  background: var(--portfolio-surface);
+  background:
+    radial-gradient(circle at 82% 5rem, var(--portfolio-glow), transparent 24rem),
+    var(--portfolio-surface);
+  background-attachment: fixed;
 }
 
 ::selection {
@@ -414,9 +444,11 @@ body {
 }
 
 .masthead {
-  background: var(--portfolio-card);
+  background: var(--portfolio-header);
   border-bottom: 1px solid var(--portfolio-border);
   box-shadow: none;
+  backdrop-filter: blur(14px) saturate(135%);
+  -webkit-backdrop-filter: blur(14px) saturate(135%);
 }
 
 .masthead::after {
@@ -503,7 +535,7 @@ body {
   border: 1px solid var(--portfolio-border);
   border-radius: 50%;
   background: var(--portfolio-card);
-  box-shadow: none;
+  box-shadow: 0 0 0 5px var(--portfolio-accent-soft), 0 12px 30px rgba(37, 38, 43, 0.12);
 }
 
 .sidebar .author__name {
@@ -562,11 +594,12 @@ body {
   border-top: 1px solid var(--portfolio-border);
   background: transparent;
   counter-increment: research-list-item;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .research-list-card:hover {
   border-color: var(--portfolio-accent);
+  background: linear-gradient(180deg, var(--portfolio-hover), transparent 75%);
 }
 
 .research-list-card::before {
@@ -592,6 +625,11 @@ body {
 .research-list-card h2 a {
   color: var(--portfolio-heading);
   text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.research-list-card h2 a:hover {
+  color: var(--portfolio-accent-strong);
 }
 
 .research-list-card__subtitle {
@@ -636,6 +674,11 @@ body {
   padding: 1.2rem 0;
   border-top: 1px solid var(--portfolio-border);
   background: transparent;
+  transition: border-color 0.18s ease;
+}
+
+.publication-list .list__item:hover {
+  border-color: var(--portfolio-accent);
 }
 
 .publication-list .archive__item-title {
@@ -748,6 +791,13 @@ body {
   color: var(--portfolio-muted);
 }
 
+a:focus-visible,
+button:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--portfolio-accent);
+  outline-offset: 3px;
+}
+
 @media screen and (min-width: 925px) {
   .archive {
     padding-right: 0.5rem;
@@ -770,6 +820,8 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .research-list-card,
+  .research-list-card h2 a,
+  .publication-list .list__item,
   .author__urls a {
     transition: none;
   }
