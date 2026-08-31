@@ -15,11 +15,13 @@ I am a Software Engineering master's student at **Nanjing University**, working 
 
 ## Current Position
 
-I am currently an Algorithm Intern in the **Multimodal LLM Department at SenseTime**, where I develop data and evaluation pipelines for presentation agents and contribute to research on revision-aware multi-agent presentation authoring.
+I am currently an **Algorithm Intern** in the **Multimodal LLM Department at SenseTime**.
 
 ## Selected Research
 
 ### [MURAL-Presenter: Multi-agent Unified Revision-Aware Authoring for Long-horizon Presentations](/portfolio/mural-presenter/)
+
+**Planned submission to ICLR 2027.**
 
 A skill-driven multi-agent framework for full-lifecycle presentation authoring that addresses cross-stage dependencies, cross-slide consistency, and iterative revision through shared deck-level state and impact-aware coordination.
 
@@ -27,7 +29,9 @@ A skill-driven multi-agent framework for full-lifecycle presentation authoring t
 
 ### [WANDER: Bridging Human Workflow and Automated Computer Use via Naturalistic Demonstrations and Enhanced Retrieval](/portfolio/wander/)
 
-A human-trajectory retrieval-augmented computer-use agent that converts historical human operation trajectories into reusable structured knowledge to mitigate planning drift and unstable operation granularity in long-horizon desktop tasks. **AAAI 2027 conference submission.**
+**AAAI 2027 conference submission.**
+
+A human-trajectory retrieval-augmented computer-use agent that converts historical human operation trajectories into reusable structured knowledge to mitigate planning drift and unstable operation granularity in long-horizon desktop tasks.
 
 [GitHub repository](https://github.com/Morishima6/Computer-Use-Agent)
 
