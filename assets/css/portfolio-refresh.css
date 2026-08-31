@@ -1,25 +1,49 @@
 :root {
-  --portfolio-accent: #157a87;
-  --portfolio-accent-strong: #0e5f69;
-  --portfolio-accent-soft: #e8f4f5;
-  --portfolio-surface: #f7f9fc;
+  --portfolio-accent: #27272a;
+  --portfolio-accent-strong: #09090b;
+  --portfolio-accent-soft: #f4f4f5;
+  --portfolio-surface: #fafafa;
   --portfolio-card: #ffffff;
-  --portfolio-border: #dfe7ec;
-  --portfolio-muted: #5e6b78;
-  --portfolio-heading: #172033;
-  --portfolio-shadow: 0 12px 32px rgba(28, 45, 63, 0.08);
+  --portfolio-border: #e4e4e7;
+  --portfolio-muted: #71717a;
+  --portfolio-heading: #18181b;
+  --portfolio-on-accent: #ffffff;
+  --portfolio-shadow: 0 12px 32px rgba(24, 30, 36, 0.07);
+  --global-base-color: #27272a;
+  --global-bg-color: #ffffff;
+  --global-footer-bg-color: #fafafa;
+  --global-border-color: #e4e4e7;
+  --global-link-color: #27272a;
+  --global-link-color-hover: #09090b;
+  --global-link-color-visited: #52525b;
+  --global-masthead-link-color: #3f3f46;
+  --global-masthead-link-color-hover: #09090b;
+  --global-text-color: #27272a;
+  --global-text-color-light: #71717a;
 }
 
 html[data-theme="dark"] {
-  --portfolio-accent: #63c7d2;
-  --portfolio-accent-strong: #8edce4;
-  --portfolio-accent-soft: #173f45;
-  --portfolio-surface: #30373d;
-  --portfolio-card: #3c444b;
-  --portfolio-border: #59656d;
-  --portfolio-muted: #c5ced4;
-  --portfolio-heading: #ffffff;
-  --portfolio-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
+  --portfolio-accent: #e4e4e7;
+  --portfolio-accent-strong: #fafafa;
+  --portfolio-accent-soft: #2d2d30;
+  --portfolio-surface: #18181b;
+  --portfolio-card: #232326;
+  --portfolio-border: #3f3f46;
+  --portfolio-muted: #a1a1aa;
+  --portfolio-heading: #fafafa;
+  --portfolio-on-accent: #18181b;
+  --portfolio-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+  --global-base-color: #e4e4e7;
+  --global-bg-color: #232326;
+  --global-footer-bg-color: #232326;
+  --global-border-color: #3f3f46;
+  --global-link-color: #e4e4e7;
+  --global-link-color-hover: #ffffff;
+  --global-link-color-visited: #a1a1aa;
+  --global-masthead-link-color: #e4e4e7;
+  --global-masthead-link-color-hover: #ffffff;
+  --global-text-color: #e4e4e7;
+  --global-text-color-light: #a1a1aa;
 }
 
 .home-page .page__content a {
@@ -126,7 +150,7 @@ html[data-theme="dark"] {
 .portfolio-button:hover {
   border-color: var(--portfolio-accent);
   color: var(--portfolio-accent-strong);
-  box-shadow: 0 6px 18px rgba(21, 122, 135, 0.12);
+  box-shadow: 0 6px 18px rgba(24, 24, 27, 0.12);
   transform: translateY(-1px);
 }
 
@@ -134,12 +158,12 @@ html[data-theme="dark"] {
 .home-page .portfolio-button--primary {
   border-color: var(--portfolio-accent);
   background: var(--portfolio-accent);
-  color: #ffffff;
+  color: var(--portfolio-on-accent);
 }
 
 .portfolio-button--primary:hover {
   background: var(--portfolio-accent-strong);
-  color: #ffffff;
+  color: var(--portfolio-on-accent);
 }
 
 .position-panel {
@@ -217,7 +241,7 @@ html[data-theme="dark"] {
   border: 1px solid var(--portfolio-border);
   border-radius: 15px;
   background: var(--portfolio-card);
-  box-shadow: 0 5px 18px rgba(28, 45, 63, 0.045);
+  box-shadow: 0 5px 18px rgba(24, 30, 36, 0.045);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -364,7 +388,7 @@ body {
 
 .masthead {
   background: var(--portfolio-card);
-  box-shadow: 0 1px 0 var(--portfolio-border), 0 8px 24px rgba(28, 45, 63, 0.04);
+  box-shadow: 0 1px 0 var(--portfolio-border), 0 8px 24px rgba(24, 30, 36, 0.04);
 }
 
 .masthead::after {
@@ -422,12 +446,12 @@ body {
   border-color: var(--portfolio-accent);
   border-radius: 9px;
   background: var(--portfolio-accent);
-  color: #ffffff;
+  color: var(--portfolio-on-accent);
 }
 
 .page__content .btn--primary:hover {
   background: var(--portfolio-accent-strong);
-  color: #ffffff;
+  color: var(--portfolio-on-accent);
 }
 
 .sidebar {
@@ -439,9 +463,11 @@ body {
 }
 
 .author__avatar img {
-  border: 0;
-  border-radius: 22px;
-  box-shadow: 0 10px 26px rgba(28, 45, 63, 0.12);
+  padding: 4px;
+  border: 1px solid var(--portfolio-border);
+  border-radius: 50%;
+  background: var(--portfolio-card);
+  box-shadow: 0 8px 22px rgba(24, 30, 36, 0.1);
 }
 
 .sidebar .author__name {
@@ -473,7 +499,7 @@ body {
   padding: 1.15rem 1.25rem;
   border-left: 3px solid var(--portfolio-accent);
   background: var(--portfolio-card);
-  box-shadow: 0 5px 18px rgba(28, 45, 63, 0.04);
+  box-shadow: 0 5px 18px rgba(24, 30, 36, 0.04);
 }
 
 .archive-intro p:last-child {
@@ -497,7 +523,7 @@ body {
   border: 1px solid var(--portfolio-border);
   border-radius: 15px;
   background: var(--portfolio-card);
-  box-shadow: 0 5px 18px rgba(28, 45, 63, 0.045);
+  box-shadow: 0 5px 18px rgba(24, 30, 36, 0.045);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -562,7 +588,7 @@ body {
   border: 1px solid var(--portfolio-border);
   border-radius: 13px;
   background: var(--portfolio-card);
-  box-shadow: 0 4px 14px rgba(28, 45, 63, 0.04);
+  box-shadow: 0 4px 14px rgba(24, 30, 36, 0.04);
 }
 
 .publication-list .archive__item-title {
@@ -600,7 +626,7 @@ body {
   border: 1px solid var(--portfolio-border);
   border-radius: 14px;
   background: var(--portfolio-card);
-  box-shadow: 0 5px 18px rgba(28, 45, 63, 0.045);
+  box-shadow: 0 5px 18px rgba(24, 30, 36, 0.045);
 }
 
 .cv-download p:nth-child(2) {
@@ -622,7 +648,7 @@ body {
   border: 1px solid var(--portfolio-border);
   border-radius: 13px;
   background: var(--portfolio-card);
-  box-shadow: 0 4px 14px rgba(28, 45, 63, 0.035);
+  box-shadow: 0 4px 14px rgba(24, 30, 36, 0.035);
 }
 
 .cv-page > ul > li {
@@ -640,7 +666,7 @@ body {
   border: 1px solid var(--portfolio-border);
   border-radius: 13px;
   background: var(--portfolio-card);
-  box-shadow: 0 4px 14px rgba(28, 45, 63, 0.035);
+  box-shadow: 0 4px 14px rgba(24, 30, 36, 0.035);
 }
 
 .cv-publication-item {
