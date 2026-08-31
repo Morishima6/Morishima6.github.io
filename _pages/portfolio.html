@@ -10,6 +10,13 @@ author_profile: true
 
 {% assign portfolio = site.portfolio | sort: "date" | reverse %}
 {% for post in portfolio %}
-  {% include archive-single.html %}
+  {% if post.ongoing %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+{% for post in portfolio %}
+  {% unless post.ongoing %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}
 

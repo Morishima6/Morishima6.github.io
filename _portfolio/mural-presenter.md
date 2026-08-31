@@ -4,6 +4,7 @@ excerpt: "Revision-Aware Multi-Agent Authoring for Long-Horizon Presentations"
 collection: portfolio
 permalink: /portfolio/mural-presenter/
 date: 2026-06-01
+ongoing: true
 ---
 
 MURAL-Presenter is a skill-driven multi-agent framework for full-lifecycle presentation authoring. It addresses cross-stage dependencies, cross-slide consistency, and iterative revision through shared deck-level state and impact-aware coordination.
