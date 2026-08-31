@@ -27,13 +27,19 @@ A skill-driven multi-agent framework for full-lifecycle presentation authoring t
 
 A human-trajectory retrieval-augmented computer-use agent that converts historical human operation trajectories into reusable structured knowledge to mitigate planning drift and unstable operation granularity in long-horizon desktop tasks. **AAAI 2027 conference submission.**
 
+[GitHub repository](https://github.com/Morishima6/Computer-Use-Agent)
+
 ### [SE-Explorer Agent: A Lightweight ReAct Agent for Software Engineering Tasks](/portfolio/se-explorer-agent/)
 
 A lightweight ReAct-style agent loop that dynamically performs knowledge retrieval, code localization, evidence collection, solution generation, and verification based on task state.
 
+[GitHub repository](https://github.com/Morishima6/SE-Explorer-Agent)
+
 ### [GenJudge: An Explainable Multi-Model Multimodal AIGC Detection Framework](/portfolio/genjudge/)
 
 A multi-model framework that simulates expert review mechanisms for detecting AI-generated content in image-text pairs, addressing the poor cross-domain generalization of existing single-model approaches.
+
+[GitHub repository](https://github.com/Morishima6/GenJudge)
 
 ## Education
 
